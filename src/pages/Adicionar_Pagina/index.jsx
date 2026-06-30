@@ -1,18 +1,17 @@
-import { Title } from './styles'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Card from '../../components/Card'
 
 
-function Home({variavelzinha}){
+function Adicionar_Pagina(){
 
     return (
         <div>
-            <Header pagina={1}></Header>
-            <Title> Home {variavelzinha} </Title>
+            <Header pagina={3}></Header>
+            Adicionando coisa
             <Footer></Footer>
         </div>
     )
 }
 
-export default Home; 
+export default Adicionar_Pagina; 
