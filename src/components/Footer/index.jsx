@@ -1,8 +1,8 @@
 function Footer(){
     return(
-        <footer>
+        <div style={{paddingLeft: '5px'}}>
             <p>&copy; {new Date().getFullYear()} Gerenciador de Tarefas</p>
-        </footer>
+        </div>
     );
 }
 

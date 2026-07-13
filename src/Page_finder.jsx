@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Tarefas_Pagina from './pages/Tarefas_Pagina';
 import Adicionar_Pagina from './pages/Adicionar_Pagina';
+import Extra from './pages/Extra';
 import Contatos from './pages/Contatos';
 
 
@@ -10,9 +11,10 @@ function Page_finder(){
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home/>} />
+                <Route path="/" element={<Home variavelzinha="Nícolas" />} />
                 <Route path="/tarefas" element={<Tarefas_Pagina/>} />
                 <Route path="/adicionar" element={<Adicionar_Pagina/>} />
+                <Route path="/extra" element={<Extra/>} />
                 <Route path="/contatos" element={<Contatos/>} />
             </Routes>
         </Router>

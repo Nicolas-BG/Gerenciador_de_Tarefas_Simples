@@ -6,6 +6,9 @@ export const HeaderFlex = style.div `
     width: 100%;
     height: 80px;    
     justify-content: center;   
+
+    margin: 0px;
+    padding: 0px;
    
 `
 
@@ -21,6 +24,7 @@ export const NomePagina = style.h1 `
     color: white;
     transition: background-color 0.5s ease; 
     transition: color 0.5s ease;
+    
 
     &:hover {
         background-color: white;

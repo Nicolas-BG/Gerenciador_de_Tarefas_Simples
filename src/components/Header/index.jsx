@@ -7,6 +7,7 @@ function Header({ pagina }) {
     var HomeAtivo  = false;
     var TarefasAtivo = false;
     var AddAtivo = false;
+    var ExtraAtivo = false;
     var ContatosAtivo = false
 
     if (pagina == 1){
@@ -15,6 +16,8 @@ function Header({ pagina }) {
         TarefasAtivo = true;
     } else if (pagina == 3){
         AddAtivo = true;
+    } else if (pagina == 4){
+        ExtraAtivo = true;
     } else {
         ContatosAtivo = true;
     }
@@ -39,6 +42,7 @@ function Header({ pagina }) {
                 Tarefas
             </NomePagina>
             <NomePagina style = {AddAtivo ? styleAlt : style} onClick={() => navigate('/adicionar')}><a href="#"></a>Adicionar Tarefa</NomePagina>
+            <NomePagina style = {ExtraAtivo ? styleAlt : style} onClick={() => navigate('/extra')}><a href="#"></a>Extra</NomePagina>
             <NomePagina style = {ContatosAtivo ? styleAlt : style} onClick={() => navigate('/contatos')}><a href="#"></a>Contatos</NomePagina>
         </HeaderFlex>
     );
